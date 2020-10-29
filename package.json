@@ -1,7 +1,6 @@
 {
   "name": "test1",
   "version": "1.0.0",
-  "description": "",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -26,5 +25,14 @@
     "objection": "^2.2.3",
     "pg": "^8.4.2",
     "pug": "^3.0.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mai-Aziz/FullStack_Task.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Mai-Aziz/FullStack_Task/issues"
+  },
+  "homepage": "https://github.com/Mai-Aziz/FullStack_Task#readme",
+  "description": ""
 }
