@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<style>
+		  .container {
+            width: 100%;
+            height: 70%;
+            margin: 50px;
+            font-family: Tahoma, Geneva, sans-serif;
+        }
+		form label{
+			margin: 0 auto;
+			color: #1f1f1f;
+			font-family: Tahoma, Geneva, sans-serif;
+		}
+
+		div h3 {
+			text-align: left;
+			color: #4d4d4d;
+			padding: 3px 0 3px 0;
+		}
+
+		form h5 {
+			text-align: left;
+			color: #4d4d4d;
+		}
+
+		form h5 a {
+			text-align: left;
+			color: #1f1f1f;
+			padding: 20px 0 20px 0;
+		}
+		h5 a {
+			text-align: left;
+			color: #1f1f1f;
+			padding: 20px 0 20px 0;
+		}
+		form input[type="password"],
+		form input[type="text"],
+		form input[type="email"] {
+			width: 20%;
+			height: 5%;
+			padding: 15px;
+			border: 1px solid #dddddd;
+			margin-bottom: 15px;
+			box-sizing: border-box;
+		}
+
+		form input[type="submit"] {
+			width: 10%;
+			height: 5%;
+			padding: 15px;
+			background-color: #535b63;
+			border: 0;
+			box-sizing: border-box;
+			cursor: pointer;
+			font-weight: bold;
+			color: #ffffff;
+		}
+	</style>
+</head>
+
+<body>
+	<h5><a href="/logout">Log Out</a></h5>
+	
+	<div class="container">
+	<h3>Hello</h3>
+		<div><a href="/users">print all user</a></div>
+				<div>
+				<h3>Add New User</h3>
+				<form action="/adduser" method="POST">
+					<h5>please fill in user info you want to add</h5>
+					<div>
+					<input type="text" name="name" placeholder="Name" required data-required-msg=' Name is required' />
+	
+					<input type="email" name="email" placeholder="Email" required data-required-msg=' Email is required' />
+	
+					<input type="password" name="password" placeholder="password more than 5 char" required data-required-msg=' password is required' />
+					</div>
+					<div><input type="submit">
+					</div>
+				</form>
+			</div>
+
+			<div>
+				<h3>find user by his ID</h3>
+				<form action="/findbyID" method="POST">
+					<input type="text" name="id" placeholder="Enter User ID " required data-required-msg=' UserID is required'><br>
+					<input type="submit">
+				</form>
+			</div>
+			<div>
+				<h3>update User Name</h3>
+				<form action="/update" method="POST">
+					<div>
+						<input type="email" name="email" placeholder="Enter User Email to Update " required data-required-msg=' User Name is required'>
+						<input type="text" name="newName" placeholder="Enter new User Name " required data-required-msg=' UserID is required' />
+					</div>
+					<div>
+					<input type="submit">
+				</div>
+				</form>
+			</div>
+			<div>
+				<h3>Delete User</h3>
+				<form action="/delete" method="POST">
+					<h6>You can check user's id by the first choice up there </h6>
+					
+					<input type="text" name="id" placeholder="Enter User ID to be deleted" required data-required-msg=' UserID is required' ><br>
+	
+					<input type="submit">
+				</form>
+			</div>
+		</div>
+		
+</body>
+
+</html>

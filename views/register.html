@@ -1,0 +1,69 @@
+<html>
+
+<head>
+  <title>login</title>
+  <style>
+    .login-form {
+ width: 300px;
+ margin: 0 auto;
+ font-family: Tahoma, Geneva, sans-serif;
+}
+.login-form h1 {
+    text-align: center;
+    color: #4d4d4d;
+    font-size: 24px;
+    padding: 20px 0 20px 0;
+}
+.login-form h5 {
+ text-align: left;
+ color: #4d4d4d;
+ padding: 20px 0 20px 0;
+}
+.login-form h5 a {
+ text-align: left;
+ color: #1f1f1f;
+ padding: 20px 0 20px 0;
+}
+.login-form input[type="password"],
+.login-form input[type="text"],.login-form input[type="email"] {
+ width: 100%;
+ padding: 15px;
+ border: 1px solid #dddddd;
+ margin-bottom: 15px;
+ box-sizing:border-box;
+}
+.login-form input[type="submit"] {
+ width: 100%;
+ padding: 15px;
+ background-color: #535b63;
+ border: 0;
+ box-sizing: border-box;
+ cursor: pointer;
+ font-weight: bold;
+ color: #ffffff;
+}
+ </style>
+</head>
+
+<body>
+  <div class="login-form">
+    <form action="/signup" method="POST">
+      <h1>Register</h1>
+      <input type="text" name="name" placeholder="Enter your Name" required data-required-msg=' Name is required'/>
+
+      <input type="email" name="email" placeholder="Enter your Email" required data-required-msg=' email is required'/>
+
+      <input type="password"  name="password" placeholder="password more than 5 char" required data-required-msg=' passwoed is required'/>
+
+      <input type="submit">
+      <div>
+        <h5>Already have an account? <a href="/signin">Sign in</a>.</h5>
+      </div>
+    </form>
+  </div>
+<script>
+
+</script>
+</body>
+
+</html>
