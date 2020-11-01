@@ -1,4 +1,7 @@
 # FullStack_Task
+Fullstack project using express framework, objection-knew as ORM and postgresql database 
+login/regisrtaion app with authenticated CRUD operation only for logged in users using express-session and cookies 
+
 ## Enviroment
 * npm init
 
