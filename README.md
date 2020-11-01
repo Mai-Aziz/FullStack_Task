@@ -1,22 +1,22 @@
 # FullStack_Task
 ## Enviroment
-npm init
+*npm init
 
-npm install express
+* npm install express
 
-npm install knex
+* npm install knex
 
-npm install objection // ORM for modeling
+* npm install objection // ORM for modeling
 
-npm install pg // database 
+* npm install pg // database 
 
-npm install express-session //used with cookie for authentication
+* npm install express-session //used with cookie for authentication
 
-npm install body-parser
+* npm install body-parser
 
-npm install cookie-parser
+* npm install cookie-parser
 
-npm install -g nodemon
+* npm install -g nodemon
 
 ## Project Folders/Files
 
