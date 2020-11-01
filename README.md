@@ -51,7 +51,7 @@ login/regisrtaion app with authenticated CRUD operation only for logged in users
 * update user 
 * delete user 
 ##### these API ends point can user use them only in dashboard // a logged out user can not redirect to the API end points
-#### all operations requests and responses are using JSON res and HTTP code res 
+#### all operations requests and responses are using JSON and HTTP code res 
 
 # check it out :)
 
