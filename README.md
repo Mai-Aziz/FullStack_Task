@@ -22,20 +22,20 @@ npm install -g nodemon
 
 ### db folder
 #### migration folder
-##### create_user_table // used to create table  with coulms insted of writing raw sql queries
-##### seed // used to seed your table in the database with new values
+##### create_user_table  used to create table  with coulms insted of writing raw sql queries
+##### seed  used to seed your table in the database with new values
 
 ### model folder
-##### User.js  // user model created using objection ORM to get table name as in the database
+##### User.js   user model created using objection ORM to get table name as in the database
 
 ### views folder
-##### register // signup page 
-##### login // login page require email and password
-##### dashboard //  html page that is user redirected to when loggin in
+##### register.js signup page 
+##### login.js  login page require email and password
+##### dashboard.js  html page that is user redirected to when loggin in
 
-#### knexfile.js // where connection to the datbase is made, in our case knexfile connect to postgres database
+#### knexfile.js  where connection to the datbase is made, in our case knexfile connect to postgres database
 
-#### app.js //where all the magic is 
+#### app.js  where all the magic is 
 ##### app.js contain each api end point for each operation in the app // must held this way for session and cookie // its seems in that easy to get session info from route to another 
 ##### app.js held session and cookie so only logged in user can do :
 ###### retrive all users 
